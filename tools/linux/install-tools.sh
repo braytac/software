@@ -1,5 +1,5 @@
 #!/bin/bash
 
-sudo apt-get install gtkterm cutecom git gitk git-email
-sudo adduser $USER dialout
-sudo apt -y install libgconf2-4
+gksudo gpasswd -a $USER uucp
+gksudo pacman -S gconf git --noconfirm --need
+gksudo pacman -U pkg/*.xz --noconfirm
